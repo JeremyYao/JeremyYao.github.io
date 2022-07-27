@@ -1,6 +1,5 @@
 import { Email, GitHub, LinkedIn } from "@mui/icons-material";
 import { Box, Button, SxProps, Theme, Typography } from "@mui/material";
-import { OpenInNewTabButtonProps } from "../OpenInNewTabButtonProps";
 
 export default function ContactInformation() {
   const buttonStyleOverride: SxProps<Theme> | undefined = {
@@ -34,7 +33,6 @@ export default function ContactInformation() {
         justifyContent={"center"}
       >
         <Button
-          {...OpenInNewTabButtonProps}
           href="mailto:jeremy.yao.info@gmail.com"
           sx={buttonStyleOverride}
           size="large"
@@ -44,17 +42,15 @@ export default function ContactInformation() {
           Email
         </Button>
         <Button
-          {...OpenInNewTabButtonProps}
-          href={"https://www.youtube.com/watch?v=rIPq9Fl5r44"}
+          href={"https://www.linkedin.com/in/jeremy-yao"}
           sx={{ ...buttonStyleOverride }}
           size="large"
           startIcon={<LinkedIn />}
           variant="outlined"
         >
-          Discord
+          LinkedIn
         </Button>
         <Button
-          {...OpenInNewTabButtonProps}
           href={"https://github.com/JeremyYao"}
           sx={buttonStyleOverride}
           size="large"

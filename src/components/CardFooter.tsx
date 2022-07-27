@@ -1,6 +1,5 @@
 import { Download } from "@mui/icons-material";
 import { Box, Button, SxProps, Theme } from "@mui/material";
-import { OpenInNewTabButtonProps } from "../OpenInNewTabButtonProps";
 
 export default function CardFooter() {
   const buttonStyleOverride: SxProps<Theme> | undefined = {
@@ -17,7 +16,6 @@ export default function CardFooter() {
       bgcolor={"#161619"}
     >
       <Button
-        {...OpenInNewTabButtonProps}
         href={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
         sx={buttonStyleOverride}
         size="large"
