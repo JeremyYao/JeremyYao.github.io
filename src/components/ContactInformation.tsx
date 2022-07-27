@@ -5,7 +5,6 @@ import { OpenInNewTabButtonProps } from "../OpenInNewTabButtonProps";
 export default function ContactInformation() {
   const buttonStyleOverride: SxProps<Theme> | undefined = {
     textTransform: "none",
-    maxWidth: 120,
     margin: 1,
   };
 
@@ -46,13 +45,13 @@ export default function ContactInformation() {
         </Button>
         <Button
           {...OpenInNewTabButtonProps}
-          href={"https://www.linkedin.com/in/jeremy-yao"}
+          href={"https://www.youtube.com/watch?v=rIPq9Fl5r44"}
           sx={{ ...buttonStyleOverride }}
           size="large"
           startIcon={<LinkedIn />}
           variant="outlined"
         >
-          LinkedIn
+          Discord
         </Button>
         <Button
           {...OpenInNewTabButtonProps}

@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import { Image } from "mui-image";
 import React from "react";
 import headshotPic from "./images/headshot.jpg";
 import ContactInformation from "./components/ContactInformation";
@@ -24,23 +25,20 @@ function App() {
         className="App"
         display="flex"
         alignItems={"center"}
-        padding="3%"
+        padding="5%"
         justifyContent="center"
         bgcolor={"#23252C"}
       >
         <Box
           className="box-container"
-          maxWidth={500}
+          maxWidth={"42.69%"}
+          minWidth={"400px"}
           bgcolor={"#1A1B21"}
           borderRadius={2}
           overflow={"hidden"}
+          sx={{ flexDirection: { xs: "column", md: "row" } }}
         >
-          <Box
-            width={"100%"}
-            component="img"
-            alt="A portrait picture of Jeremy Yao"
-            src={headshotPic}
-          />
+          <Image src={headshotPic} duration={1000} />
           <Box
             className="box-business-card-info"
             marginTop={4}
