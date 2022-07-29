@@ -17,7 +17,7 @@ function ErrorPage(props: AboutPageProps) {
         display={"flex"}
         justifyContent={"center"}
         className="box-container"
-        height={420}
+        height={500}
         width={"56.25%"} // 16:9
         bgcolor={"background.paper"}
         borderRadius={4}
@@ -25,14 +25,14 @@ function ErrorPage(props: AboutPageProps) {
         sx={{ flexDirection: { xs: "column", md: "row" } }}
       >
         <iframe
-          height={"100%"}
-          width={"100%"}
-          src="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1"
+          width="100%"
+          height="100%"
+          src={`https://www.youtube.com/embed/dQw4w9WgXcQ?autplay=1`}
           frameBorder="0"
-          allow="autoplay; encrypted-media"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          title="video"
-        />{" "}
+          title="Embedded youtube"
+        />
       </Box>
     </Box>
   );
