@@ -11,4 +11,4 @@ export const HOME_NAV_PAGE_NAME = 'Home'
 export const ABOUT_NAV_PAGE_NAME = 'About'
 export const PORTFOLIO_NAV_PAGE_NAME = 'Portfolio'
 
-export const NAV_PAGES:string[] =[HOME_NAV_PAGE_NAME, ABOUT_NAV_PAGE_NAME, PORTFOLIO_NAV_PAGE_NAME]
+export const NAV_PAGES:string[] =[HOME_NAV_PAGE_NAME, ABOUT_NAV_PAGE_NAME, PORTFOLIO_NAV_PAGE_NAME,]
