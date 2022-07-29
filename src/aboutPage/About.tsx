@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import aboutInfoJSON from "../aboutInfo.json";
+import aboutInfoJSON from "./aboutInfo.json";
 
 type DataObject = [title: string, content: string][];
 
