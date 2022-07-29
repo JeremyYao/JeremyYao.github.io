@@ -13,13 +13,14 @@ function ErrorPage(props: AboutPageProps) {
       display="flex"
       alignItems={"center"}
       justifyContent="center"
+      padding={"5%"}
     >
       <Box
         display={"flex"}
         justifyContent={"center"}
         className="box-container"
-        height={`${(VIDEO_WIDTH * 9) / 16}vh`}
-        width={`${VIDEO_WIDTH}vh`} // 16:9
+        height={`${(VIDEO_WIDTH * 9) / 16}vmin`}
+        width={`${VIDEO_WIDTH}vmin`} // 16:9
         bgcolor={"background.paper"}
         borderRadius={4}
         overflow={"hidden"}
