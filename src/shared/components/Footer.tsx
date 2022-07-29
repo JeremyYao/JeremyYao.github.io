@@ -5,7 +5,7 @@ export default function Footer() {
     <Box
       display="flex"
       justifyContent={"center"}
-      marginTop={"5%"}
+      marginTop={"3%"}
       padding={"1.5%"}
       bgcolor={"background.paper"}
     >

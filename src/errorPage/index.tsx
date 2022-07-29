@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 interface AboutPageProps {}
 
 function ErrorPage(props: AboutPageProps) {
+  const VIDEO_WIDTH: number = 130;
   /*
     Want image to be centered, taking up half of screen. 
   */
@@ -17,8 +18,8 @@ function ErrorPage(props: AboutPageProps) {
         display={"flex"}
         justifyContent={"center"}
         className="box-container"
-        height={500}
-        width={"56.25%"} // 16:9
+        height={`${(VIDEO_WIDTH * 9) / 16}vh`}
+        width={`${VIDEO_WIDTH}vh`} // 16:9
         bgcolor={"background.paper"}
         borderRadius={4}
         overflow={"hidden"}
