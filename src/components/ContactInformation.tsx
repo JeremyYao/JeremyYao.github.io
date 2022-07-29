@@ -1,5 +1,6 @@
 import { Email, GitHub, LinkedIn } from "@mui/icons-material";
-import { Box, Button, SxProps, Theme, Typography } from "@mui/material";
+import { Box, Button, Link, SxProps, Theme, Typography } from "@mui/material";
+import { WEBSITE_URL_FULL, WEBSITE_URL_SHORT } from "../constants";
 
 export default function ContactInformation() {
   const buttonStyleOverride: SxProps<Theme> | undefined = {
@@ -23,7 +24,9 @@ export default function ContactInformation() {
         gutterBottom={true}
         align={"center"}
       >
-        website.goes.here
+        <Link variant={"subtitle1"} gutterBottom={true} href={WEBSITE_URL_FULL}>
+          {WEBSITE_URL_SHORT}
+        </Link>
       </Typography>
 
       <Box
