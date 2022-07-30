@@ -14,17 +14,14 @@ import Footer from "./shared/components/Footer";
 import Navbar from "./shared/components/Navbar";
 import ErrorPage from "./errorPage";
 
-const renderPage = (
-  currentNavPage: string,
-  isDarkMode: boolean
-): JSX.Element => {
+const renderPage = (currentNavPage: string): JSX.Element => {
   switch (currentNavPage) {
     case ABOUT_NAV_PAGE_NAME:
-      return <AboutPage isDarkMode={isDarkMode} />;
-    // case HOME_NAV_PAGE_NAME:
-    //   return <h1>Not made yet!!!!!!!</h1>;
-    // case PORTFOLIO_NAV_PAGE_NAME:
-    //   return <h1>Not made yet!!!!!!!</h1>;
+      return <AboutPage />;
+    case HOME_NAV_PAGE_NAME:
+      return <ErrorPage />;
+    case PORTFOLIO_NAV_PAGE_NAME:
+      return <ErrorPage />;
     default:
       return <ErrorPage />;
   }
@@ -74,19 +71,31 @@ export function App(): JSX.Element {
 
   // ************************* WHAT PAGE THE USER IS ON *************************
   const currentNavPageState = React.useState<string>(ABOUT_NAV_PAGE_NAME); // Store initial value in localStorage or something................
-  const [currentNavPage, setCurrentNavPage] = currentNavPageState;
+  const [currentNavPage] = currentNavPageState;
   // ************************* WHAT PAGE THE USER IS ON *************************
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Navbar
-        navPages={NAV_PAGES}
-        isDarkModeState={isDarkModeState}
-        currentNavPageState={currentNavPageState}
-      />
-      <Box paddingTop={"100px"}>{renderPage(currentNavPage, isDarkMode)}</Box>
-      <Footer />
+      <Box position={"relative"} minHeight={"100vh"}>
+        <Navbar
+          navPages={NAV_PAGES}
+          isDarkModeState={isDarkModeState}
+          currentNavPageState={currentNavPageState}
+        />
+        <Box
+          className="main-content-container"
+          display={"flex"}
+          paddingTop={"100px"}
+          paddingBottom={"4.5rem"}
+          minHeight={"100vh"}
+          alignContent={"center"}
+          justifyContent={"center"}
+        >
+          {renderPage(currentNavPage)}
+        </Box>
+        <Footer />
+      </Box>
     </ThemeProvider>
   );
 }

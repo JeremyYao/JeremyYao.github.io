@@ -3,10 +3,13 @@ import { Box, Typography } from "@mui/material";
 export default function Footer() {
   return (
     <Box
+      position={"absolute"}
+      bottom={0}
+      width={"100%"}
+      height={"2.5rem"}
       display="flex"
       justifyContent={"center"}
-      marginTop={"3%"}
-      padding={"1.5%"}
+      alignItems={"center"}
       bgcolor={"background.paper"}
     >
       <Typography gutterBottom={true} variant="caption" component={"p"}>

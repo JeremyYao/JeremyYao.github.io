@@ -12,3 +12,5 @@ export const ABOUT_NAV_PAGE_NAME = 'About'
 export const PORTFOLIO_NAV_PAGE_NAME = 'Portfolio'
 
 export const NAV_PAGES:string[] =[HOME_NAV_PAGE_NAME, ABOUT_NAV_PAGE_NAME, PORTFOLIO_NAV_PAGE_NAME,]
+
+export const UNIV_BOX_BORDER_RADIUS:number = 4

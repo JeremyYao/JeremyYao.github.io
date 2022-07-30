@@ -3,14 +3,9 @@ import { Image } from "mui-image";
 import headshotPic from "./headshot.jpg";
 import ContactInformation from "./ContactInformation";
 import About from "./About";
-import CardFooter from "./CardFooter";
+import { UNIV_BOX_BORDER_RADIUS } from "../constants";
 
-interface AboutPageProps {
-  isDarkMode: boolean;
-}
-
-function AboutPage(props: AboutPageProps) {
-  const { isDarkMode } = props;
+function AboutPage() {
   /*
     Want image to be centered, taking up half of screen. 
   */
@@ -26,7 +21,7 @@ function AboutPage(props: AboutPageProps) {
         maxWidth={"42.69%"}
         minWidth={"400px"}
         bgcolor={"background.paper"} // TODO: Change this
-        borderRadius={4}
+        borderRadius={UNIV_BOX_BORDER_RADIUS}
         overflow={"hidden"}
         sx={{ flexDirection: { xs: "column", md: "row" } }}
       >
