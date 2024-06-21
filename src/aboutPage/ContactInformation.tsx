@@ -65,13 +65,12 @@ export default function ContactInformation() {
         </Button>
         <Button
           href={ResumePDF}
-          download="yao_resume_PUBLIC.pdf"
+          download="jeremy_yao_resume_PUBLIC.pdf"
           target="_blank"
           sx={buttonStyleOverride}
           size="large"
           startIcon={<Download />}
           variant="outlined"
-          onClick={() => {}}
         >
           Resume
         </Button>
