@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cad07060.css",
-    "main.js": "/static/js/main.b9c234ca.js",
+    "main.js": "/static/js/main.8d6f36d8.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/headshot.jpg": "/static/media/headshot.cd7b354f0cf8e2d132b8.jpg",
     "static/media/yao_resume_2024_Q3_PUBLIC.pdf": "/static/media/yao_resume_2024_Q3_PUBLIC.334c2e0d889913bdbdbc.pdf",
@@ -39,11 +39,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.cad07060.css.map": "/static/css/main.cad07060.css.map",
-    "main.b9c234ca.js.map": "/static/js/main.b9c234ca.js.map",
+    "main.8d6f36d8.js.map": "/static/js/main.8d6f36d8.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cad07060.css",
-    "static/js/main.b9c234ca.js"
+    "static/js/main.8d6f36d8.js"
   ]
 }
