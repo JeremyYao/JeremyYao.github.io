@@ -13,7 +13,7 @@ export default function Footer() {
       bgcolor={"background.paper"}
     >
       <Typography gutterBottom={true} variant="caption" component={"p"}>
-        This website is still a work in progress.
+        Jeremy Yao, 2024
       </Typography>
     </Box>
   );

@@ -1,6 +1,7 @@
-import { Email, GitHub, LinkedIn } from "@mui/icons-material";
+import { Email, GitHub, LinkedIn, Download } from "@mui/icons-material";
 import { Box, Button, Link, SxProps, Theme, Typography } from "@mui/material";
 import { WEBSITE_URL_FULL, WEBSITE_URL_SHORT } from "../constants";
+import ResumePDF from "./yao_resume_2024_Q3_PUBLIC.pdf";
 
 export default function ContactInformation() {
   const buttonStyleOverride: SxProps<Theme> | undefined = {
@@ -61,6 +62,18 @@ export default function ContactInformation() {
           variant="outlined"
         >
           GitHub
+        </Button>
+        <Button
+          href={ResumePDF}
+          download="yao_resume_PUBLIC.pdf"
+          target="_blank"
+          sx={buttonStyleOverride}
+          size="large"
+          startIcon={<Download />}
+          variant="outlined"
+          onClick={() => {}}
+        >
+          Resume
         </Button>
       </Box>
     </Box>
