@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cad07060.css",
-    "main.js": "/static/js/main.79f7b0bc.js",
+    "main.js": "/static/js/main.ce48fe5c.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/headshot.jpg": "/static/media/headshot.cd7b354f0cf8e2d132b8.jpg",
     "static/media/jeremy_yao_resume_2024_Q3_PUBLIC.pdf": "/static/media/jeremy_yao_resume_2024_Q3_PUBLIC.1ec763a25299c0091f3e.pdf",
@@ -39,11 +39,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.cad07060.css.map": "/static/css/main.cad07060.css.map",
-    "main.79f7b0bc.js.map": "/static/js/main.79f7b0bc.js.map",
+    "main.ce48fe5c.js.map": "/static/js/main.ce48fe5c.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cad07060.css",
-    "static/js/main.79f7b0bc.js"
+    "static/js/main.ce48fe5c.js"
   ]
 }
